@@ -12,15 +12,5 @@ public class GymNacionApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GymNacionApplication.class, args);
 	}
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return new WebMvcConfigurer() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**") // todas las rutas
-						.allowedOrigins("*") // permite cualquier origen, o tu frontend
-						.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
-			}
-		};
-	}
+
 }
