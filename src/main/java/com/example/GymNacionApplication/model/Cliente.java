@@ -29,6 +29,9 @@ public class Cliente {
     private String email;
 
     @Column(nullable = false)
+    private String password;
+
+    @Column(nullable = false)
     private Boolean activo = true;
 
 }
