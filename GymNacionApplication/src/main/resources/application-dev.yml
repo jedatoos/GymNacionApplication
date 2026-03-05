@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gym_nacion
+    username: postgres
+    password: Ayre2026
