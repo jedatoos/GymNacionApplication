@@ -1,0 +1,48 @@
+Index: GymNacionApplication/src/main/java/com/example/GymNacionApplication/config/CorsConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.GymNacionApplication.config;\r\n\r\nimport org.springframework.context.annotation.Configuration;\r\nimport org.springframework.web.servlet.config.annotation.CorsRegistry;\r\nimport org.springframework.web.servlet.config.annotation.WebMvcConfigurer;\r\n\r\n@Configuration\r\npublic class CorsConfig implements WebMvcConfigurer {\r\n    @Override\r\n    public void addCorsMappings(CorsRegistry registry) {\r\n        registry.addMapping(\"/api/**\")\r\n                .allowedOrigins(\"*\")\r\n                .allowedMethods(\"GET\", \"POST\", \"PUT\", \"DELETE\", \"OPTIONS\")\r\n                .allowedHeaders(\"*\");\r\n    }\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/GymNacionApplication/src/main/java/com/example/GymNacionApplication/config/CorsConfig.java b/GymNacionApplication/src/main/java/com/example/GymNacionApplication/config/CorsConfig.java
+--- a/GymNacionApplication/src/main/java/com/example/GymNacionApplication/config/CorsConfig.java	(revision 38391d3ce83906b023674e787208e1e1e1ae6181)
++++ b/GymNacionApplication/src/main/java/com/example/GymNacionApplication/config/CorsConfig.java	(date 1772681269081)
+@@ -1,5 +1,7 @@
+ package com.example.GymNacionApplication.config;
+ 
++
++
+ import org.springframework.context.annotation.Configuration;
+ import org.springframework.web.servlet.config.annotation.CorsRegistry;
+ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3f775f09-8be7-4fc4-a145-3afc8da67534\" name=\"Changes\" comment=\"&#10;jhmjh\">\r\n      <change beforePath=\"$PROJECT_DIR$/GymNacionApplication/src/main/java/com/example/GymNacionApplication/GymNacionApplication.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/GymNacionApplication/src/main/java/com/example/GymNacionApplication/GymNacionApplication.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"CopilotPersistence\">\r\n    <persistenceIdMap>\r\n      <entry key=\"_C:/MIS COSAS/Practica Spring Boot/GymNacionApplication\" value=\"3AVZeYDA5X9LfIcqkqB7pTswmiy\" />\r\n    </persistenceIdMap>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"lastFilter\": {\r\n    \"state\": \"OPEN\",\r\n    \"assignee\": \"jedatoos\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/jedatoos/GymNacionApplication-main.git\",\r\n    \"accountId\": \"b677569f-dcfc-42a1-b61c-13ad1ee3b8f4\"\r\n  }\r\n}]]></component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"mavenHomeTypeForPersistence\" value=\"WRAPPER\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"customColor\": \"\",\r\n  \"associatedIndex\": 8\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"3AVZeYDA5X9LfIcqkqB7pTswmiy\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"Spring Boot.GymNacionApplication.executor\": \"Run\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"project.structure.last.edited\": \"Project\",\r\n    \"project.structure.proportion\": \"0.0\",\r\n    \"project.structure.side.proportion\": \"0.0\",\r\n    \"settings.editor.selected.configurable\": \"preferences.lookFeel\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3f775f09-8be7-4fc4-a145-3afc8da67534\" name=\"Changes\" comment=\"\" />\r\n      <created>1772679798135</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1772679798135</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"muchos cambios\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1772680080698</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1772680080698</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"&#10;jhmjh\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1772680214391</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1772680214391</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"&#10;jhmjh\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1772680836136</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1772680836136</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Initial commit\" />\r\n    <MESSAGE value=\"muchos cambios\" />\r\n    <MESSAGE value=\"Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;GymNacionApplication-main/src/main/java/com/example/GymNacionApplication/controllers/CondicionSaludController.java\" />\r\n    <MESSAGE value=\"&#10;jhmjh\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"&#10;jhmjh\" />\r\n  </component>\r\n  <component name=\"github-copilot-workspace\">\r\n    <instructionFileLocations>\r\n      <option value=\".github/instructions\" />\r\n    </instructionFileLocations>\r\n    <promptFileLocations>\r\n      <option value=\".github/prompts\" />\r\n    </promptFileLocations>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 38391d3ce83906b023674e787208e1e1e1ae6181)
++++ b/.idea/workspace.xml	(date 1772681185935)
+@@ -4,9 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="3f775f09-8be7-4fc4-a145-3afc8da67534" name="Changes" comment="&#10;jhmjh">
+-      <change beforePath="$PROJECT_DIR$/GymNacionApplication/src/main/java/com/example/GymNacionApplication/GymNacionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/GymNacionApplication/src/main/java/com/example/GymNacionApplication/GymNacionApplication.java" afterDir="false" />
+-    </list>
++    <list default="true" id="3f775f09-8be7-4fc4-a145-3afc8da67534" name="Changes" comment="&#10;jhmjh" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -56,7 +54,7 @@
+     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+     "RunOnceActivity.git.unshallow": "true",
+     "Spring Boot.GymNacionApplication.executor": "Run",
+-    "git-widget-placeholder": "main",
++    "git-widget-placeholder": "desarrollo-gym",
+     "kotlin-language-version-configured": "true",
+     "project.structure.last.edited": "Project",
+     "project.structure.proportion": "0.0",
